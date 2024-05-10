@@ -124,7 +124,7 @@ if (ehPrimo) {
 // opções de cálculos geométricos. O usuário deve ser
 // capaz de escolher uma opção e inserir os valores
 // necessários para realizar o cálculo correspondente.
-// Utilize condicionais para direcionar o programa combase na escolha do usuário.
+// Utilize condicionais para direcionar o programa com base na escolha do usuário.
 // Opções do Menu:
 
 // 1. Calcular Área do Triângulo
@@ -132,6 +132,61 @@ if (ehPrimo) {
 // 3. Calcular Volume do Cubo
 // 4. Calcular Área do Círculo
 // 5. Sair
+
+let opcao = Number(prompt('1. Triângulo, 2. Quadrilátero, 3. Cubo, 4. Círculo; E eu te digo sua Área/Volume:', 'Digite 5 para Sair.'));
+
+let mensagem;
+
+let basetri, alturatri, areatri, lado1, lado2, areaquad, ladocubo, volcubo, raio, areacirc;
+
+switch (opcao) {
+    case 1:
+        basetri = parseFloat(prompt('Base do Triângulo:'));
+        alturatri = parseFloat(prompt('Altura do Triângulo:'));
+        areatri = (basetri * alturatri) / 2;
+        mensagem = "A Área do Triângulo é: " + areatri;
+        break;
+
+    case 2:
+        lado1 = parseFloat(prompt('Lado 1 do Quadrilátero'));
+        lado2 = parseFloat(prompt('Lado 2 do Quadrilátero'));
+        areaquad = lado1 * lado2;
+        mensagem = "A Área do Quadrilátero é: " + areaquad;
+        break;
+
+    case 3:
+        ladocubo = parseFloat(prompt('Comprimento do Cubo'));
+        volcubo = ladocubo * ladocubo * ladocubo;
+        mensagem = "O Volume do seu Cubo é: " + volcubo;
+        break;
+
+    case 4:
+        raio = parseFloat(prompt('Insira o Raio do Círculo'));
+        areacirc = Math.PI * raio * raio;
+        mensagem = "A Área do seu Círculo é: " + areacirc;
+        break;
+
+    case 5:
+        mensagem = "Encerrado.";
+        break;
+}
+
+console.log(mensagem);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Atividade em sala 
@@ -141,6 +196,8 @@ n1= parseFloat(prompt('Nota 1:'));
 n2= parseFloat(prompt('Nota2:'));
 n3= parseFloat(prompt('Nota 3:'));
 md= (n1+n2+n3)/3;
+
+
 // atividade em sala
 // mesma coisa mas exibe o retorno
 let n1,n2,n3, md
