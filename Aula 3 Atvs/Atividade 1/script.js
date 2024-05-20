@@ -1,4 +1,3 @@
-// Atividade 1 (feita em sala) Contagem regressiva
 function contarRegressivamente() {
     let numero = document.getElementById('numero').value;
     numero = parseInt(numero);
