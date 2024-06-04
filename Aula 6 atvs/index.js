@@ -118,3 +118,59 @@ console.log(`Quantidade de Contas pagas: ${count}, Valor Total Pago: R$ ${valorT
 }
 
 valorPagamento()
+
+
+
+
+// DESAFIO PRÁTICO
+// Faça um programa que implemente um jogo de Craps. O jogador lança um par de dados, obtendo
+// um valor entre 2 e 12. Se, na primeira jogada, você
+// tirar 7 ou 11, você um
+// "
+// natural e ganhou. Se você
+// tirar 2, 3 ou 12 na primeira jogada, isto é chamado
+// de"craps" e você perdeu. Se, na primeira jogada, você fez um 4, 5, 6, 8, 9 ou 10,este é seu "Ponto".
+// Seu objetivo agora é continuar jogando os dados até tirar este número novamente. Você perde, no entanto, se tirar um 7 antes de tirar este Ponto novamente.
+var numero= parseInt(Math.random(1,6) + Math.random(1,6))
+
+function craps() {
+
+    if (numero== 2 || numero== 3 || numero== 12) {
+        console.log("Craps!!! Você perdeu.")
+        break
+    }
+
+    else if (numero== 4 || numero== 5 || numero== 6 || numero==8 || numero== 9 || numero==10) {
+        pontoCraps()
+
+    else if (numero== 7 || numero==11) {
+            console.log(`Você ganhou!!! Tirou ${numero}`)
+            break
+        }
+    }
+    else {console.log("Você Perdeu!!!")}
+
+    }
+}
+craps()
+
+function pontoCraps() {
+    var seuNumero== []
+    seuNumero.push(numero)
+    while True {
+        numero
+        if numero== 7 {
+            console.log(`Você tirou um ${numero} Você Perdeu!`)
+        break
+        }
+        else if numero == seuNumero[] {
+            console.log(`Você Tirou seu ${numero}. Você ganhou!!!`)
+        break
+        }
+        else {console.log(`Você tirou um ${numero}`)
+            seuNumero.push(numero)
+        }
+        
+    }    
+}
+
