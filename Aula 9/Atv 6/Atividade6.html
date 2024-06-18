@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+    
+
+</head>
+<body>
+<ul id="lista-completa">
+    <li class="item">olá</li>
+    <li class="item">olá</li>
+    <li class="item">olá</li>
+    <li class="item">olá</li>
+    <li class="item">olá</li>
+    <li class="item">olá</li>
+    <li>eu não fui trocado</li>
+</ul>
+
+<script>
+
+function trocarTexto() {
+
+ let listaCompleta = document.getElementById("lista-completa")
+
+ let itemLista = document.querySelectorAll(".item")
+
+ itemLista.forEach(function(item) { 
+    
+    item.innerText = "Olá Pessoas"
+    })
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  trocarTexto(); 
+});
+</script>
+    
+</body>
+</html>
