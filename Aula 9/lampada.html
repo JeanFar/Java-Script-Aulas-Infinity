@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lampada</title>
+</head>
+<body>
+    <style>
+        body {
+        background-color: rgb(124, 124, 124)
+        }
+
+        .conteiner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+
+<div class="conteiner">
+    <img src="lampadaapagada.png" alt="lampadaapagada" id="lampadaapagada" style="display: block;"> 
+    <img src="lampadaacesa.png" alt="lampadaacesa" id="lampadaacesa" style="display: none;">
+</div>
+
+<script>
+ 
+    let lampadaAp = document.getElementById("lampadaapagada");
+    let lampadaAc = document.getElementById("lampadaacesa");
+    let body = document.querySelector(".conteiner");
+
+
+    lampadaAp.addEventListener("mouseenter", acender);
+    lampadaAp.addEventListener("mouseleave", apagar )
+
+
+    function acender() {
+  
+        lampadaAp.style.display = "none";
+        
+
+        lampadaAc.style.display = "block";
+
+   
+        document.body.style.backgroundColor = "white";
+    }
+
+    function apagar() {
+  
+            lampadaAc.style.display = "none";
+
+            lampadaAp.style.display = "block";
+
+            document.body.style.backgroundColor = ""
+
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
