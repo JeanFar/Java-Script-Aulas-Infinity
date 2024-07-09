@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4
+
+    </title>
+</head>
+<body>
+<p></p>
+<ul id="lista">
+
+</ul>
+
+<script>
+
+let array = [50, 45, 67, 89, 10, 5]
+
+const paragrafo = document.querySelector('p')
+ paragrafo.textContent = array
+
+
+
+array.forEach(numero => {
+    const lista = document.getElementById("lista")
+
+    const itemLista = document.createElement("li")
+
+    lista.append(itemLista)
+    itemLista.textContent = numero ** 2
+    
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5
+    </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p></p>
+<ul id="lista">Lista:</ul>
+
+
+
+
+<script>
+
+let array = ["jean", "maria", "olivia", "leonardo"]
+
+const paragrafo = document.querySelector("p")
+paragrafo.textContent = array
+
+
+let palavrasGrandes = []
+palavrasGrandes = array.filter(function (palavra) {
+
+    if (palavra.length > 5)
+    
+        return palavrasGrandes.push(palavra)
+})
+
+palavrasGrandes.forEach(element => {
+
+    const lista = document.getElementById("lista")
+
+    const itemLista = document.createElement("li")
+
+    lista.append(itemLista)
+    itemLista.textContent = element
+
+    
+});
+
+
+
+    
+</script>
+</body>
+</html>
